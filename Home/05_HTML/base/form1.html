@@ -38,8 +38,8 @@
                         </fieldset>
                     </form>
                 </td>
-            </tr>
-            <tr>
+                </tr>
+                <tr>
                 <td>
                     <form action="http://fe.it-academy.by/TestForm.php" name="name3" method="post" target="_blank">
                         <h3>Простая форма авторизации:</h3>
@@ -69,8 +69,8 @@
                         </fieldset>
                     </form>
                 </td>
-            </tr>
-            <tr>
+                </tr>
+                <tr>
                 <td>
                     <form action="http://fe.it-academy.by/TestForm.php" name="отзыв" method="post" target="_blank">
                         <h3>Отзыв:</h3>
@@ -78,7 +78,7 @@
                         <legend>Оставьте Ваш отзыв</legend>
                         <input type="text" name="Отзыв" size="10" maxlength="20">
                         * Имя <br>
-                        <input type="text" name="email">
+                        <input type="email" name="email" >
                         * e-mail <br>
                         <textarea name="text_area" cols="10" rows="3" placeholder="Форма отправки"></textarea>
                         <input type="submit" value="Отправить"> <br>
@@ -86,13 +86,63 @@
                         </fieldset>
                     </form>
                 </td>
-            </tr>
-            
-              
+                <td>
+                    <form action="http://fe.it-academy.by/TestForm.php" method="post" target="_blank">
+                        <h3>Выпадающий и мульти списки</h3>
+                        <fieldset>
+                        <legend>Города РБ</legend> 
+                        <select name="list" id="list">
+                            <option value="Brest">Брест</option>
+                            <option value="Minsk">Минск</option>
+                            <option value="Vitebsk">Витебск</option>
+                        </select>   
+                        <select name="list1" size="8">
+                            <optgroup label="Города РБ">
+                                <option value="1">Брест</option>
+                                <option value="2">Минск</option>
+                                <option value="3">Витебск</option>
+                            </optgroup>
+                            <optgroup label="Города России">
+                                <option value="4">Москва</option>
+                                <option value="5">Рязань</option>
+                                <option value="6">Магадан</option>
+                            </optgroup>
+                        </select>
+                        <input type="submit" value="Ok">
+                        </fieldset>
+                    </form>
+                </td>
+                </tr>  
+                <tr>
+                <td>
+                    <form action="http://fe.it-academy.by/TestForm.php" enctype="multipart/form-data" method="post" target="_blank">
+                     <h3>Загрузка файла на сервер</h3>
+                     <fieldset>
+                       
+                        <legend>Upload</legend>
+                        Файл: <br>
+                        <input type="file" name="file"> <br>
+                        Спрок хранения (года): <br>
+                        <input type="number" name="god" min="1" max="3">
+                        <input type="submit" value="Загрузить">
+                    </fieldset>
+                </form>
+                </td>
+                <td>
+                <form action="http://fe.it-academy.by/TestForm.php" method="post" target="_blank"> 
+                    <h3>Валидация данных HTML5:</h3>
+                    <fieldset>
+                        
+                        <legend>Строка поиска</legend>
+                        <input type="text" pattern="[А-Яа-яЁё]+" placeholder="Только русские буквы"> <br>
+                        <input type="text" name="phone" pattern="^(\+375)-(29|25|44|33)-(\d{7})$" placeholder="+375-29-1234567" > <br>
+                        <input type="submit" value=" Проверить">
 
-            
-        
-        
+                    </fieldset>
+
+                </form>
+                </td>
+                </tr>
         </tbody>
 
     </table>
