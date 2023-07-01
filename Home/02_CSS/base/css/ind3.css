@@ -1,0 +1,25 @@
+.wrep{
+    background-color: rgb(197, 194, 194);
+}
+.blok{
+    float: left;
+    background-color:rgb(163, 161, 161) ;
+    height: 450px;
+    width: 15em;
+
+}
+.st1{
+    background-color: rgb(109, 108, 108);
+    margin-bottom: 2em;
+}
+.st2{background-color: rgb(109, 108, 108);
+    margin-bottom: 2em;
+}
+.footer{
+    background-color: rgb(153, 153, 153);
+    clear: both;
+}
+.img{
+    background-color: rgb(109, 108, 108) ;
+    float: right;
+}

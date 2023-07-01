@@ -1,0 +1,15 @@
+.text1{
+    list-style: upper-roman;
+    width: 350px;
+}
+.text2{
+    list-style: lower-roman; 
+    width: 350px;
+}
+.text3{
+    background-color: black;
+    color: green;
+    width: 400px;
+    overflow: auto;
+    height: 80px;
+}

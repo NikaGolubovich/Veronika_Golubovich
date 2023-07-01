@@ -1,0 +1,27 @@
+.all {
+    width: 146px;
+    height: 189px;
+    background-image: url(../cards.7e0a18f0.png);
+    float: left;
+}
+
+.card1 {
+    background-position: 2.3px -985.5px;
+}
+
+.card2 {
+    background-position: 143.3px -1987.8px;
+}
+
+.card3 {
+    background-position: -430px -1193.9px;
+}
+
+.card4 {
+    background-position: 5px -2386px;
+}
+
+
+.card5 {
+    background-position: -287.8px -1px;
+}
