@@ -38,6 +38,11 @@
         tr:last-child {
             text-align: center;
         }
+        #button {
+            background-color: aqua;
+            border-radius: 5px;
+            margin: 20px;
+        }
     </style>
     
 </head>
@@ -53,7 +58,7 @@
         </tr>
         <tr class="line">
             <th>Иванов Иван Иванович</th>
-            <td>M</td>
+            <td>М</td>
             <td>начальник</td>
             <td>01.01.1960</td>
             <td>4567</td>
@@ -69,7 +74,7 @@
         </tr>
         <tr class="line">
             <th>Сидоров Илья Игоревич</th>
-            <td>M</td>
+            <td>М</td>
             <td>бухгалтер</td>
             <td>01.01.1979</td>
             <td>743434</td>
@@ -77,7 +82,7 @@
         </tr>
         <tr class="line">
             <th>Пупин Фёдор Фёдорович</th>
-            <td>M</td>
+            <td>М</td>
             <td>водитель</td>
             <td>01.01.1963</td>
             <td>74323434</td>
@@ -85,15 +90,36 @@
         </tr>
         <tr class="line">
             <th>Крупин Сергей Иванович</th>
-            <td>M</td>
+            <td>М</td>
             <td>водитель 2</td>
             <td>01.01.1983</td>
             <td>3234534</td>
             <td>923123379</td>
         </tr>
         <tr>
-            <td colspan="6">ДАННЫЕ O СОТРУДНИКАХ</td>
+            <td colspan="6">ДАННЫЕ О СОТРУДНИКАХ</td>
         </tr>
     </table>
+    <button id="button">Нет скрытых строк</button>
+    <script
+            src="https://code.jquery.com/jquery-3.7.0.min.js"
+            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+            crossorigin="anonymous">
+    </script>
+    <script>
+            $(document).ready(function () {
+            $(".line").click(function () {
+                $(this).hide(function () {
+                    $('#button').html('Показать строки');
+                });
+            })
+            $("#button").click(function () {
+                $(".line").show(function () {
+                    $('#button').html('Нет скрытых строк');
+                });
+            })
+        })
+
+    </script>
 </body>
 </html>
